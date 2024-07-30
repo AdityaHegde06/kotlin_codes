@@ -1,0 +1,40 @@
+//parent class
+open class  Developer(){
+ open  var name:String = "Robert"
+ open  var salary:Int = 50000
+  open   var exp : Int =2
+ 
+    
+ open    fun developerType()
+    {
+        println("iam developer")
+    }
+    
+}
+    
+//child class
+
+class AndroidDeveloper(): Developer(){
+    
+    override var name="Aditya"
+    override var salary:Int =120000
+    override var exp:Int=2
+
+    override fun developerType()
+    {
+       println("Iam Android Developer") 
+    }
+    
+}
+
+fun main(){
+   var  androidDev = AndroidDeveloper()
+     androidDev.developerType()    
+     println(androidDev.name)
+     
+     var developer = Developer()
+     println(developer.name)
+     println(developer.exp)
+     println(developer.developerType())
+     
+    }
