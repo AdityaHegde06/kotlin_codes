@@ -1,0 +1,21 @@
+
+//base class
+open class 	Employee(name:String,age:Int){
+    init{
+        println("Name of the employee is $name")
+        println("Age of the employee is $age")
+    }
+}
+
+
+//derived class
+ class 	CEO(name:String,age:Int,salary:Double):Employee(name,age){
+    init{
+        println("Salary per annum is $salary crore rupees")
+    }
+}
+
+fun main(args:Array<String>)
+{
+    CEO("Sundar Pichai",42,450.000)
+}
